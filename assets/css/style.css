@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.debug {
+  background-color: rgba(138, 43, 226, 0.2);
+  border: 1px solid black;
+}
+
+:root {
+  --background-color: var(#141922);
+  --sidebar-bgcolor: var(black);
+  --footer-bgcolor: var(#282828);
+  --title-color: var(white);
+  --icon-color: var(white);
+  --text-color: var(#A3A3A3);
+}
+/* Utility */
+.d-flex {
+  display: flex;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+.sp-between {
+  justify-content: space-between;
+}
+.tx-center {
+  text-align: center;
+}
+.margin-auto {
+  margin: 0 auto;
+}
+.list {
+  list-style: none;
+}
+.w-60{
+  width: 60%;
+}
+img {
+  width: 100%;
+}
+
+
+
+
+
+/* main */
+
+.header {
+  width: 100%;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+main .container {
+  height: calc(100vh - 90px);
+  width: 100%;
+  overflow: auto; 
+}
+.main_wrapper {
+  height: 100%;
+}
+
+aside {
+  width: 150px;
+  height: calc(100%-90px);
+  flex-shrink: 0;
+}
+
+aside li {
+  overflow: auto;
+}
+
+aside .profile {
+  height: 50px;
+  
+}
+
+
+
+
+main .content .row{
+  width: 95%; 
+  margin: 0 auto;
+}
+
+main .content .row .card {
+  padding: 5px;
+  /* margin-bottom: 50px; */
+}
+
+main .content .row .card img {
+  max-width: 180px;
+  max-height: 180px;
+}
+
+footer {
+  height: 90px;
+  width: 100%;
+}
