@@ -46,8 +46,15 @@ img {
 h4, h6{
   text-transform: capitalize;
 }
+h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 40px;
+}
 
-
+h6 {
+  color: #A3A3A3;
+}
 
 /* main */
 aside {
@@ -57,7 +64,6 @@ aside {
   padding: 5px;
   background-color: black;
 }
-
 aside img {
   padding: 20px 0 0;
 }
@@ -152,15 +158,66 @@ main .content .row{
 
 main .content .row .card {
   padding: 5px;
-  /* margin-bottom: 50px; */
+  margin: 20px 0 50px 0;
+  max-width: 190px;
+  color: white;
 }
 
-main .content .row .card img {
-  max-width: 180px;
-  max-height: 180px;
+main .content p {
+  color: #A3A3A3;
+  margin-left: 40px;
+  line-height: 40px;
 }
+
+main .content .rec-play,.pop-artist,.create-for .card {
+  text-align: center;
+}
+main .content .pop-artist .card img{
+  border-radius: 50%;
+}
+
+/* fine main */
+
 
 footer {
   height: 90px;
   width: 100%;
+  background-color: #090B12;
 }
+footer .brano-sx .col{
+  flex-direction: column;
+  padding-top: 25px
+}
+footer .brano-sx .col h3 {
+  margin-left: 0;
+  font-size: 0.8rem;
+}
+
+footer .brano-sx .col-heart {
+  padding-top: 30px;
+  margin-left: 80px;
+}
+
+footer .brano-sx .col-heart i {
+  color: #A3A3A3;
+}
+
+footer .brano-sx img{
+  width: 60px;
+  margin: 15px;
+}
+
+footer .media-big {
+  width: 40%;
+  text-align: center;
+}
+
+footer .media-big i {
+  margin: 20px;
+  width: 70px;
+  color: white;
+}
+
+/* footer .media-big .line {
+
+} */
