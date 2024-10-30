@@ -17,38 +17,52 @@
     
     <section class="main-wrapper d-flex">
       <aside>
-        <img src="assets/img/logo.svg" alt="logo spotify">
-        <ul class="list">
-          <li><a href="#" class="txt-decor"><i class="fas fa-home"></i>Home</a></li>
-          <li><a href="#" class="txt-decor"><i class="fas fa-search"></i>Cerca</a></li>
-          <li><a href="#" class="txt-decor"><i class="fas fa-grip-lines-vertical"></i>La tua libreria</a></li>
-        </ul>
+        <div class="aside-top">
+          <img src="assets/img/logo.svg" alt="logo spotify">
+          <ul class="home list">
+            <li><a href="#" class="txt-decor"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#" class="txt-decor"><i class="fas fa-search"></i>Cerca</a></li>
+            <li><a href="#" class="txt-decor"><i class="fas fa-grip-lines-vertical"></i>La tua libreria</a></li>
+          </ul>
+  
 
-        <h4 class="txt-uppercase">Playlist</h4>
-        <a href="#" class="txt-decor"><i class="fas fa-plus-square"></i>Crea Playlist</a>
+          <div class="playlist">
+            <h4 class="txt-uppercase">Playlist</h4>
+            <a href="#" class="txt-decor"><i class="fas fa-plus-square"></i>Crea Playlist</a>
+          </div>
+  
 
-        <ul class="list txt-decor">
-          <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-          <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-          <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-          <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-          <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-          <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-          <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-        </ul>
+          <div class="name-play">
+            <ul class="list txt-decor">
+              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
+              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
+              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
+              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
+              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
+              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
+              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
+            </ul>
+          </div>
+        </div>
 
-        <div class="profile d-flex debug">
+        <div class="profile d-flex">
           <a href="#"><i class="far fa-arrow-alt-circle-down"></i>installa app</a>
-          <span> Profilo</span>
+          <hr>
+          <div class="john d-flex">
+            <a href="#">
+              <img src="assets/img/profile.svg" alt="">
+            </a>
+              <span>John Doe</span> 
+          </div>          
         </div>
 
       </aside>
 
 
+      <div class="header txt-uppercase d-flex">
+        <a href="#">effettua l'upgrade</a>
+      </div>
       <div class="container"> 
-        <div class="header txt-uppercase d-flex">
-          <a href="#">effettua l'upgrade</a>
-        </div>
 
         <nav>
           <ul class="f-wrap d-flex margin-auto list sp-between w-60 txt-uppercase">
@@ -137,8 +151,8 @@
      
   </main>
 
-  <footer class="debug d-flex sp-between">
-     <div class="brano-sx d-flex debug">
+  <footer class="d-flex sp-between">
+     <div class="brano-sx d-flex">
       <img src="assets/img/sinister.jpeg" alt="sinister">
       <div class="col">
         <h3>Sinister</h3>
@@ -150,22 +164,32 @@
       </div>
     </div>
 
-     <div class="media-big debug">
-      <a href="#"><i class="fa-solid fa-shuffle debug"></i></a>
-      <a href="#"><i class="fa-solid fa-backward-step debug"></i></a>
+     <div class="media-big f-wrap">
+      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+      <a href="#"><i class="fa-solid fa-backward-step"></i></a>
       <a href="#"><i class="fa-regular fa-circle-play"></i></a> 
-      <a href="#"><i class="fa-solid fa-forward-step"></i></a> 
-      <div class="line">
-        0.25 - 4.35
+      <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+      <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
+      <div class="media-bar">
+        <span>0.25</span>
+        <div class="line">
+          <span class="trenta"></span>
+        </div>
+        <span>4.25</span>
       </div>
      </div>
 
 
-     <div class="media-small debug">
+    <div class="media-small d-flex">
       <i class="fa-solid fa-bars"></i>
       <i class="fa-solid fa-display"></i>
       <i class="fa-solid fa-volume-high"></i>
-     </div>
+      <div class="media-bar d-flex">
+        <div class="line">
+          <span class="trenta"></span>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
