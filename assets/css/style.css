@@ -64,6 +64,7 @@ aside {
   flex-shrink: 0;
   padding: 10px 15px;
   background-color: black;
+  z-index: 2;
 }
 aside .aside-top {
   height: calc(100% - 80px);
@@ -151,6 +152,8 @@ aside .profile span {
 
 
 
+
+
 .container {
   position: relative;
 }
@@ -171,6 +174,10 @@ aside .profile span {
   border-radius: 30px;
   color: white;
   font-weight: 700;
+}
+.header a:hover {
+  border: 2px solid #A3A3A3;
+  color: #A3A3A3;
 }
 
 main .container {
@@ -209,16 +216,31 @@ main .content .row {
 }
 main .content .row .card {
   width: calc(90% / 6);
-  margin: 20px 20px 50px 0;
+  margin: 20px 0 50px 0;
 }
 main .content .row .card a {
   color: white;
   text-decoration: none;
 }
-/* main .content .row .card a i:hover {
-  z-index: 3;
+
+main .content .row .card img {
+  position: relative;
+  background-color: #090B12;
+  z-index: 10;
+}
+main .content .row .card .img-hover .icon-hover {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: calc(90% / 6);
+  z-index: 20;
+  font-size: 50px;
+  color: #A3A3A3;
+  background-color: blue;
+}
+main .content .row .card .img-hover:hover .icon-hover {
   display: block;
-} */
+}
 main .content p {
   color: #A3A3A3;
   line-height: 40px;
@@ -252,7 +274,7 @@ footer .brano-sx .col h3 {
 }
 footer .brano-sx .col-heart {
   padding-top: 30px;
-  margin-left: 80px;
+  margin-left: 30px;
 }
 footer .brano-sx .col-heart i {
   color: #A3A3A3;
@@ -331,8 +353,11 @@ footer .media-small .media-bar .line {
   }
   main .content .row .card {
     width: calc(90% / 4);
+    margin-right: 10px;
   }
 }
+
+
 
 @media (max-width: 700px) {
   .nav ul {
@@ -344,17 +369,64 @@ footer .media-small .media-bar .line {
   }
   main .content .row .card {
     width: calc(90% / 2);
+    margin-right: 10px;
+  }
+
+  footer .brano-sx{
+    width: 210px;
+  }
+
+  footer .media-big {
+    width: 80%;
+    text-align: center;
+  }
+
+  footer .media-small {
+    width: 150px;
+  }
+  footer .media-small .media-bar .line {
+    width: 75px;
   }
 }
+
+
 
 @media (max-width: 600px) {
   aside {
     width: 50px;
   }
-  
+  aside img, .home, .playlist, .name-play, .profile a, .john span, hr{
+    display: none;
+  }
+  aside .aside-top .spotify-xs {
+    display: block;
+    width: 30px;
+    margin-left: -5px;
+  }
+  aside .aside-top .spotify-xs i {
+    display: block;
+    color: #A3A3A3;
+    margin: 0 auto;
+  }
+  aside .aside-top .spotify-xs i:hover {
+    color: white;
+  }
 
+  aside .profile-spotify-xs {
+    display: block;
+  }
 
-
+  aside .profile-spotify-xs a {
+    color: #A3A3A3;
+  }
+  aside .profile-spotify-xs a img {
+    display: block;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #A3A3A3;
+    margin-left: -5px;
+  }
 
   .nav ul {
     width: 98%;
