@@ -103,7 +103,6 @@ aside .aside-top li i {
 }
 aside .aside-top li a {
   font-size: .8rem;
-  overflow: auto;
   line-height: 30px;
 }
 aside .aside-top li a:hover {
@@ -115,12 +114,19 @@ aside .aside-top h4 {
   color: white;
 }
 
+aside .aside-top .name-play {
+  overflow: auto;
+  height: 220px;
+}
 aside .aside-top .name-play a {
   color: #A3A3A3;
 }
 
+
+
 aside .profile {
   height: 80px;
+  width: 100%;
   display: block;
   color: white;
 }
@@ -203,6 +209,8 @@ main .container {
 }
 .nav li:hover {
   border-bottom: 3px solid #ADFF30;
+  width: 30px;
+  text-align: center;
 }
 
 
@@ -216,31 +224,19 @@ main .content .row {
 }
 main .content .row .card {
   width: calc(90% / 6);
-  margin: 20px 0 50px 0;
+  margin: 20px 20px 130px 0;
 }
 main .content .row .card a {
   color: white;
   text-decoration: none;
 }
-
 main .content .row .card img {
   position: relative;
   background-color: #090B12;
   z-index: 10;
 }
-main .content .row .card .img-hover .icon-hover {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: calc(90% / 6);
-  z-index: 20;
-  font-size: 50px;
-  color: #A3A3A3;
-  background-color: blue;
-}
-main .content .row .card .img-hover:hover .icon-hover {
-  display: block;
-}
+
+
 main .content p {
   color: #A3A3A3;
   line-height: 40px;
@@ -250,6 +246,24 @@ main .content .rec-play,.pop-artist,.create-for .card {
 }
 main .content .pop-artist .card img{
   border-radius: 50%;
+}
+main .content .row .card .img-hover i, .img-hover-circle i {
+  display: none;
+  position: absolute;
+  top: 5;
+  width: calc(90% / 6);
+  height: 180px;
+  margin: 10px 0 0 3px;
+  z-index: 20;
+  font-size: 50px;
+  color: #A3A3A3;
+  background-color: rgba(0, 0, 0, .5);
+}
+main .content .row .card .img-hover  i {
+  padding: 60px;
+}
+main .content .row .card .img-hover:hover i {
+  display: block;
 }
 
 /* fine main */
@@ -355,9 +369,10 @@ footer .media-small .media-bar .line {
     width: calc(90% / 4);
     margin-right: 10px;
   }
+  main .content .row .card .img-hover i {
+    width: calc(90% / 4);
+  }
 }
-
-
 
 @media (max-width: 700px) {
   .nav ul {
@@ -370,6 +385,11 @@ footer .media-small .media-bar .line {
   main .content .row .card {
     width: calc(90% / 2);
     margin-right: 10px;
+  }
+  main .content .row .card .img-hover i {
+    width: calc(90% / 2);
+    height: 210px;
+    padding: 75px;
   }
 
   footer .brano-sx{
@@ -388,8 +408,6 @@ footer .media-small .media-bar .line {
     width: 75px;
   }
 }
-
-
 
 @media (max-width: 600px) {
   aside {
@@ -434,5 +452,10 @@ footer .media-small .media-bar .line {
   }
   .nav ul li {
     margin: 20px 10px;
+  }
+  main .content .row .card .img-hover i {
+    width: calc(90% / 2);
+    height: 240px;
+    padding: 85px;
   }
 }
