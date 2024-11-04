@@ -14,49 +14,45 @@
 
 
   <main>
-    
     <section class="main-wrapper d-flex">
+      <!-- inizio barra laterale -->
       <aside>
+        <!-- inizio sezione principale aside: logo, home, playlist -->
         <div class="aside-top">
           <img src="assets/img/logo.svg" alt="logo spotify">
+          <!-- logo per max-widht:600px -->
           <img src="assets/img/logo-small.svg" alt="logo spotify small" class="d-none spotify-xs">
           <ul class="d-none spotify-xs">
             <li><a href="#" class="txt-decor"><i class="fas fa-home"></i></a></li>
             <li><a href="#" class="txt-decor"><i class="fas fa-search"></i></a></li>
             <li><a href="#" class="txt-decor"><i class="fa-solid fa-lines-leaning"></i></a></li>
           </ul>
-
+          <!-- logo per max-widht:600px -->
+          <!-- inizio home, cerca, libreria -->
           <ul class="home list">
             <li><a href="#" class="txt-decor"><i class="fas fa-home"></i>Home</a></li>
             <li><a href="#" class="txt-decor"><i class="fas fa-search"></i>Cerca</a></li>
             <li><a href="#" class="txt-decor"><i class="fa-solid fa-lines-leaning"></i>La tua libreria</a></li>
           </ul>
-          
-
+          <!-- fine home, cerca, libreria -->
+          <!-- inizio elenco playlist -->
           <div class="playlist">
             <h4 class="txt-uppercase">Playlist</h4>
             <a href="#" class="txt-decor"><i class="fas fa-plus-square"></i>Crea Playlist</a>
+            <div class="name-play">
+              <ul class="list txt-decor">
+                <li><a href="#" class="txt-decor">Nome Playlist</a></li>
+                <li><a href="#" class="txt-decor">Nome Playlist</a></li>
+                <li><a href="#" class="txt-decor">Nome Playlist</a></li>
+                <li><a href="#" class="txt-decor">Nome Playlist</a></li>
+                <li><a href="#" class="txt-decor">Nome Playlist</a></li>
+              </ul>
+            </div>
           </div>
-  
-
-          <div class="name-play">
-            <ul class="list txt-decor">
-              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-              <li><a href="#" class="txt-decor">Nome Playlist</a></li>
-            </ul>
-          </div>
+          <!-- inizio elenco playlist -->
         </div>
-
-
+        <!-- fine sezione principale aside: logo, home, playlist -->
+        <!-- inizio blocco profilo -->
         <div class="profile-spotify-xs d-none">
           <a href="#"><i class="far fa-arrow-alt-circle-down"></i></a>
           <a href="#">
@@ -74,14 +70,16 @@
               <span>John Doe</span> 
           </div>          
         </div>
+         <!-- fine blocco profilo -->
       </aside>
-
-
+      <!-- fine barra laterale -->
+      <!-- inizio header -->
       <div class="header txt-uppercase d-flex">
         <a href="#">effettua l'upgrade</a>
       </div>
-
-
+      <!-- fine header -->
+      <!-- inizio sezione principale -->
+      <!-- inizio navbar del container-->
       <div class="container"> 
         <div class="nav">
           <ul class="d-flex list f-wrap sp-between w-60 txt-uppercase">
@@ -93,7 +91,9 @@
             <li><a href="#"></a>scopri</li>
           </ul>
         </div>
-
+      <!-- fine navbar del container -->
+      <!-- inizio card della pagina -->
+       <!-- inizio row Recently played -->
        <div class="content">
          <h3>Recently played</h3>
          <div class="rec-play">
@@ -163,12 +163,12 @@
             </div>
           </div>
         </div>
-          
-          
-        <div class="content create-for">
+          <!-- fine row Recently played -->
+          <!-- inizio row Creato per John Doe -->
+        <div class="row create-for">
             <h3>Creato per John Doe</h3>
             <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-            <div class="row d-flex">
+            <div class="d-flex">
               <div class="card">
                 <a href="#">
                   <div class="img-hover">
@@ -177,7 +177,7 @@
                   </div>
                   <h4>Release Radar</h4>
                 </div>
-                </a>                 
+
               <div class="card">
                 <a href="#">
                   <div class="img-hover">
@@ -189,80 +189,88 @@
               </div>
             </div>
           </div>
-
-          <div class="content">
+           <!-- fine row Creato per John Doe -->
+            <!-- inizio row Artisti puù popolari -->
+          <div class="row">
             <h3>Artisti più popolari</h3>
             <p>Più ascolti, più accurati saranno i suggerimenti</p>
-            <div class="pop-artist">
-              <div class="row d-flex">
+            <div class="pop-artist d-flex">
                 <div class="card">
                   <a href="#">
-                    <div class="img-hover-circle">
+                    <div class="img-hover">
                       <i class="fa-regular fa-circle-play"></i>
-                      <img src="assets/img/youg.jpeg" alt="">
+                      <img src="assets/img/youg.jpeg" alt="lana del rey">
                     </div>
                     <h4>Lana Del Rey</h4>
                   </a>
                 </div>
                 <div class="card">
                   <a href="#">
-                    <div class="img-hover-circle">
+                    <div class="img-hover">
                       <i class="fa-regular fa-circle-play"></i>
-                      <img src="assets/img/einaudi.jpeg" alt="">
+                      <img src="assets/img/einaudi.jpeg" alt="ludovico einaudi">
                     </div>
                     <h4>Ludovico Einaudi</h4>
                   </a>
                 </div>
               </div>
-            </div>
           </div>
-
-
-      </div>
-    </div>      
-  </section>
-     
+           <!-- fine row Creato per John Doe -->
+        </div>
+      </div>      
+      <!-- fine card della pagina -->
+    </section> 
+    <!-- fine sezione principale --> 
   </main>
 
+  <!-- inizio footer -->
+   <!-- inizio parte sinistra, brano in riproduzione -->
   <footer class="d-flex sp-between">
      <div class="brano-sx d-flex">
-      <img src="assets/img/sinister.jpeg" alt="sinister">
-      <div class="col">
-        <h3>Sinister</h3>
-        <h6>Brano Nome</h6>
+      <a href="#"><img src="assets/img/sinister.jpeg" alt="sinister"></a>
+      <div class="col-music">
+        <a href="#"><h3>Sinister</h3>
+          <h6>Brano Nome</h6>
+        </a>      
       </div>
       <div class="col-heart">
         <a href="#"><i class="far fa-heart"></i></a>
         <a href="#"><i class="far fa-folder"></i></a>
       </div>
     </div>
-
+    <!-- fine parte sinistra -->
+    <!-- inizio parte centrale, barra di riproduzione grande -->
      <div class="media-big">
-      <a href="#"><i class="fa-solid fa-shuffle"></i></a>
-      <a href="#"><i class="fa-solid fa-backward-step"></i></a>
-      <a href="#"><i class="fa-regular fa-circle-play"></i></a> 
-      <a href="#"><i class="fa-solid fa-forward-step"></i></a>
-      <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
-      <div class="media-bar">
+      <div class="buttons">
+        <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+        <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+        <a href="#"><i class="fa-regular fa-circle-play"></i></a> 
+        <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+        <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
+      </div>
+      <div class="media-bar d-flex sp-between">
         <span>0.25</span>
         <div class="line">
-          <span class="trenta"></span>
+          <div class="trenta d-flex">
+            <div class="point d-no.."></div>
+          </div>
         </div>
         <span>4.25</span>
       </div>
      </div>
-
-
+    <!-- fine parte centrale, barra di riproduzione grande -->
+    <!-- inizio parte destra, barra di risproduzione multimediale piccola -->
     <div class="media-small d-flex">
       <i class="fa-solid fa-bars"></i>
       <i class="fa-solid fa-display"></i>
       <i class="fa-solid fa-volume-high"></i>
       <div class="media-bar d-flex">
         <div class="line">
-          <span class="trenta"></span>
+          <div class="trenta"></div>
         </div>
       </div>
     </div>
+     <!-- fine parte centrale, barra di riproduzione grande -->
   </footer>
 </body>
 </html>
