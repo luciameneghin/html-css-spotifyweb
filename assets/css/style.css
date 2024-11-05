@@ -68,6 +68,9 @@ aside {
 aside .aside-top {
   height: calc(100% - 80px);
 }
+aside .aside-top img {
+  padding: 10px 15px;
+}
 aside .aside-top ul {
   position: relative;
   margin-top: 10px;
@@ -97,8 +100,8 @@ aside .aside-top .playlist {
 aside .aside-top .playlist i {
   color: #A3A3A3;
   position: absolute;
-  left: 5%;
-  top: 25%;
+  left: 15px;
+  top: 55px;
   font-size: 2.5rem;
 }
 aside .aside-top .playlist > a {
@@ -125,7 +128,7 @@ aside .aside-top .playlist li a:hover {
 }
 aside .aside-top .playlist h4 {
   font-size: .8;
-  margin: 40px 0;
+  margin: 20px 0;
   color: white;
 }
 
@@ -447,14 +450,16 @@ footer .media-small .media-bar .line {
   }
   aside .aside-top .spotify-xs {
     display: block;
-    width: 30px;
+    width: 100%;
     line-height: 30px;
-    margin-left: -5px;
+    margin: 8px;
+  }
+  aside .aside-top .spotify-xs > img {
+    width: 70px;
+    margin-left: -35%;
   }
   aside .aside-top .spotify-xs i {
-    display: block;
     color: #A3A3A3;
-    margin: 0 auto;
   }
   aside .aside-top .spotify-xs i:hover {
     color: white;
@@ -462,18 +467,18 @@ footer .media-small .media-bar .line {
 
   aside .profile-spotify-xs {
     display: block;
+    text-align: center;
   }
-
   aside .profile-spotify-xs a {
     color: #A3A3A3;
   }
   aside .profile-spotify-xs a img {
     display: block;
     width: 30px;
+    margin: 8px;
     border: 1px solid black;
     border-radius: 50%;
     background-color: #A3A3A3;
-    margin-left: -5px;
   }
   aside .profile-spotify-xs a:hover {
     color: white;
