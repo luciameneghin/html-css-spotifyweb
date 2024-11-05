@@ -62,7 +62,6 @@ aside {
   width: 230px;
   height: calc(100vh - 90px);
   flex-shrink: 0;
-  padding: 10px 15px;
   background-color: black;
   z-index: 100;
 }
@@ -73,12 +72,9 @@ aside .aside-top ul {
   position: relative;
   margin-top: 10px;
 }
-aside .aside-top .home li {
-  width: 100%;
-}
 aside .aside-top .home li a {
   color: #A3A3A3;
-  margin-left: 40px;
+  margin-left: 60px;
   line-height: 30px;
 }
 aside .aside-top .home li a:hover {
@@ -86,27 +82,28 @@ aside .aside-top .home li a:hover {
 }
 aside .aside-top .home li:hover {
   border-left: 3px solid #ADFF30;
-  margin-left: -15px;
 }
 aside .aside-top ul i{
   position: absolute;
-  left: 0;
+  left: 8%;
   font-size: 1.5rem; 
 }
 
 aside .aside-top .playlist {
   position: relative;
   height: calc(100% - 200px);
+  padding: 10px 15px;
 }
 aside .aside-top .playlist i {
   color: #A3A3A3;
   position: absolute;
-  left: 0;
-  font-size: 1.5rem;
+  left: 5%;
+  top: 25%;
+  font-size: 2.5rem;
 }
 aside .aside-top .playlist > a {
-  margin-left: 30px;
-  font-size: 1.2rem;
+  margin-left: 40px;
+  font-size: 1rem;
   color: #A3A3A3;
 }
 aside .aside-top .playlist i:hover {
@@ -118,7 +115,6 @@ aside .aside-top .playlist a:hover {
 
 aside .aside-top .playlist li i {
   font-size: 1.5rem;
-  margin: 5px;
 }
 aside .aside-top .playlist li a {
   font-size: .8rem;
@@ -129,7 +125,7 @@ aside .aside-top .playlist li a:hover {
 }
 aside .aside-top .playlist h4 {
   font-size: .8;
-  margin: 30px 0;
+  margin: 40px 0;
   color: white;
 }
 
@@ -147,6 +143,7 @@ aside .profile {
   height: 80px;
   display: block;
   color: white;
+  margin: 10px 5px;
 }
 aside .profile a {
   text-decoration: none;
@@ -154,18 +151,19 @@ aside .profile a {
   font-size: .8rem;
 }
 aside .profile a i {
-  margin: 10px 5px;
-  text-align: center;
+  margin: 10px;
 }
 aside .profile a img {
   width: 30px;
-  margin: 10px 5px;
+  margin-top: 10px;
   border: 1px solid black;
   border-radius: 50%;
   background-color: #A3A3A3;
 }
-aside .profile .john {
+aside .profile .john a {
   align-items: center;
+  justify-content: center;
+  margin-left: 5px;
 }
 aside .profile span {
   color: white;
